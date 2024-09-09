@@ -1,0 +1,50 @@
+// MongoDb is a NoSQL database
+// It is a database which is use to store database in form of collections
+// It is a document oriented database
+// In a databse, there is a collection and in a collection there is a document
+// Document is a record in a collection, it is a JSON format data.
+
+// It is schema less, we can add new fields in a document.
+// Less relation between documents, data is stores togather, so less complexity
+
+// It is stored in BSON format, which is binary JSON format, to make traversal easy.
+
+// IN MONGODB SHELL
+>> show dbs // to show all the databases
+
+>> use database_name // to use a database
+
+>> db // to show the current database
+
+>> db.createCollection('collection_name') 
+// to create a collection
+
+>> db.collection_name.insert({key: value}) 
+// to insert a document in a collection
+
+>> db.collection_name.find() 
+// to show all the documents in a collection
+
+>> db.collection_name.find().pretty() 
+// to show all the documents in a collection in a pretty format
+
+>> db.collection_name.updateOne({key: value}, {$set: {key: value}}) 
+// to update a document in a collection
+
+>>db.collection_name.updateMany({},{ $set: {key: value}}) 
+// to update all the documents in a collection
+
+// CRUD operations 
+1. create:
+>> db.collection_name.insertOne({key: value})
+>> db.collection_name.insertMany([{key: value}, {key: value}])
+2. read:
+>> db.collection_name.find()
+>> db.collection_name.findOne({key: value})
+3. update:
+>> db.collection_name.updateOne({key: value}, {$set: {key: value}})
+>> db.collection_name.updateMany({},{ $set: {key: value}})
+4. delete:
+>> db.collection_name.deleteOne({key: value})
+>> db.collection_name.deleteMany({key : value})
+>> db.collection_name.deleteMany({}) //empty whole collection

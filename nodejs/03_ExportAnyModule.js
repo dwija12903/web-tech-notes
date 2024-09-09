@@ -1,0 +1,1 @@
+exports.MyName =() => console.log('hello,Dwija Panchal'); 

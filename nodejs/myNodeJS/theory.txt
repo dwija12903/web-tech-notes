@@ -1,0 +1,32 @@
+Node is a js runtime, it is not a language or a library
+its runs as service using v8 javascript engine, v8 is written
+c++ and is extremly fast. Node is used more fore Rest API and 
+microservices,whichserves json as datatype most of the time.
+
+Why node? instaed of other serviceside technologies like php or python
+Fast,efficent and highly scalable bcoz it is event-driven and runs in 
+single loop and its non blocking i/o model. Used in both frontend and backend
+
+Non-blocking 
+works on a single thread, php is syncronous it works on multiple thread, each time
+request is made it spwans new thread. Syncronous needs to wait for one process to get 
+completed before staring next. Node is Asyncronous and non blocking single
+thread supports 1000's and 10-1000;s on many connections which are held in event loop
+which optimizes throughput and scalability in application with many i/o operations.
+Dont use node with cpu intensive apps. 
+
+Event loop
+learn diagram 
+it runs on single loop and runs asyncronously
+when a event is triggered a callback fires, so system doesnot have to run a process
+sit and wait for it and then run next. It simply runs and process and moves on. Once event is 
+fullfies it runs in a loop.
+
+node is not good for cpu intensive apps or projects
+
+npm-node package manager, used to download libraies and packages 
+
+node modules 
+modules are huge part of node and it has a large set of core modules
+we can create our own module of a file that has an exports.
+we can include variables, function all the things from one file to another 

@@ -1,0 +1,22 @@
+>>>create a custer, then API
+
+>>>Methods to do:
+    1. FindAndmodify()
+    2. upsert
+    3. updateOne()
+    4. updateMAny()
+    5. automatically update 
+    6. FindAndmodify()
+
+>>>If document available update it then do it for upsart, .toarray in mongodb
+
+>>> curd, addition deletion. works in json key value pairs
+
+>>> Query operators in mongodb: information retrival
+    the following query is used to find words starting with a, b, or c:
+    {first:{$in: ['a', 'b', 'c']}}
+    the following query is used to find words longer than 12 letters:
+    {size:{$gt: 12}}
+    the following query is used to find words with an even number of letters:
+    {size:{$mod: [2,0]}}
+
