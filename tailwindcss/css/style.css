@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    color: #00bff3;
+    @apply text-6xl;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply active:bg-red-600 hover:bg-purple-500 hover:text-white cursor-pointer border-purple-500 border-4 rounded-md inline-block p-2 mt-2 mb-4;
+  }
+}
+
+
+/* to modify styles */
+/* @layer base {
+    h1 {
+        color: rgb(68, 0, 255);
+        /* @apply to apply existing tailwind size */
+        /* @apply text-6xl; */
+    /* } */
+/* } */
+
+/* Extracting classes */
+/* @layer components {
+    .btn {
+        @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+    }
+
+    .btn-red{
+        @apply bg-red-500 text-white font-bold py-2 px-4 rounded;
+    }
+} */
+
+/* This are PostCSS Starters */

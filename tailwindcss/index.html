@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dwija's Tailwind CSS Learning</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8fafc;
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .section-title {
+            border-bottom: 2px solid #4A5568;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .note-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body class="p-6">
+    <!-- Container -->
+    <div class="container mx-auto px-4">
+        <h1 class="text-4xl font-bold mb-6">Tailwind CSS Notes</h1>
+        <!-- Variants -->
+        <section class="note-card">
+            <h2 class="text-2xl font-semibold section-title">Variants</h2>
+            <ul class="list-disc ml-6">
+                <li class="mb-2">Media Query Variants:
+                    <ul class="list-disc ml-6">
+                        <li>Adjust styles based on screen size: <code>sm:text-md md:text-lg</code></li>
+                        <li>Breakpoints: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code></li>
+                    </ul>
+                </li>
+                <li class="mb-2">State Variants:
+                    <ul class="list-disc ml-6">
+                        <li>Examples: <code>hover:bg-blue-500</code>, <code>disabled:opacity-50</code></li>
+                        <li>Other states: <code>active</code>, <code>focus</code>, <code>visited</code></li>
+                    </ul>
+                </li>
+                <li>Other Variants:
+                    <ul class="list-disc ml-6">
+                        <li>Examples: <code>first:mt-0</code>, <code>last:mb-0</code>, <code>odd:bg-gray-100</code>, <code>even:bg-gray-200</code></li>
+                        <li>Dark mode: <code>dark:bg-gray-800</code>, <code>dark:text-white</code></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <!-- Typography -->
+        <section class="note-card">
+            <h2 class="text-2xl font-semibold section-title">Typography</h2>
+            <p class="text-base font-sans text-gray-800 mb-2">
+                <strong>Fonts:</strong> Use <code>font-sans</code>, <code>font-serif</code>, <code>font-mono</code>.
+            </p>
+            <p class="text-xl font-bold mb-2">Font Sizes:</p>
+            <ul class="list-disc ml-6 mb-4">
+                <li><code>text-xs</code></li>
+                <li><code>text-sm</code></li>
+                <li><code>text-base</code></li>
+                <li><code>text-lg</code></li>
+                <li><code>text-xl</code></li>
+                <li><code>text-2xl</code></li>
+                <li><code>text-8xl</code></li>
+            </ul>
+            <p class="text-xl font-bold mb-2">Font Weights:</p>
+            <ul class="list-disc ml-6 mb-4">
+                <li><code>font-thin</code></li>
+                <li><code>font-extralight</code></li>
+                <li><code>font-light</code></li>
+                <li><code>font-normal</code></li>
+                <li><code>font-semibold</code></li>
+                <li><code>font-bold</code></li>
+            </ul>
+            <p class="text-xl font-bold mb-2">Text Styles and Transformations:</p>
+            <ul class="list-disc ml-6 mb-4">
+                <li>Styles: <code>italic</code>, <code>not-italic</code></li>
+                <li>Transformations: <code>uppercase</code>, <code>lowercase</code>, <code>capitalize</code></li>
+                <li>Decorations: <code>underline</code>, <code>line-through</code>, <code>no-underline</code></li>
+                <li>Line Height: <code>leading-tight</code>, <code>leading-normal</code>, <code>leading-loose</code></li>
+                <li>Letter Spacing: <code>tracking-tight</code>, <code>tracking-normal</code>, <code>tracking-wide</code></li>
+            </ul>
+        </section>
+        <!-- Borders -->
+        <section class="note-card">
+            <h2 class="text-2xl font-semibold section-title">Borders</h2>
+            <p class="text-xl font-bold mb-2">Border Width:</p>
+            <ul class="list-disc ml-6 mb-4">
+                <li><code>border-4</code>, <code>border-5</code>, <code>border-6</code></li>
+            </ul>
+            <p class="text-xl font-bold mb-2">Border Colors:</p>
+            <ul class="list-disc ml-6 mb-4">
+                <li><code>border-red-500</code></li>
+                <li><code>border-blue-300</code></li>
+            </ul>
+            <p class="text-xl font-bold mb-2">Border Radius:</p>
+            <ul class="list-disc ml-6 mb-4">
+                <li><code>rounded-sm</code>, <code>rounded-md</code>, <code>rounded-lg</code>, <code>rounded-xl</code></li>
+            </ul>
+            <p class="text-xl font-bold mb-2">Border Style:</p>
+            <ul class="list-disc ml-6">
+                <li><code>border-solid</code>, <code>border-dashed</code>, <code>border-dotted</code>, <code>border-double</code></li>
+            </ul>
+        </section>
+        <!-- Backgrounds and Shadows -->
+        <section class="note-card">
+            <h2 class="text-2xl font-semibold section-title">Backgrounds and Shadows</h2>
+            <p class="text-xl font-bold mb-2">Background Colors:</p>
+            <ul class="list-disc ml-6 mb-4">
+                <li><code>bg-blue-500</code></li>
+                <li><code>bg-gray-200</code></li>
+            </ul>
+            <p class="text-xl font-bold mb-2">Background Opacity:</p>
+            <ul class="list-disc ml-6 mb-4">
+                <li><code>bg-opacity-50</code></li>
+            </ul>
+            <p class="text-xl font-bold mb-2">Box Shadows:</p>
+            <ul class="list-disc ml-6">
+                <li><code>shadow-sm</code>, <code>shadow-md</code>, <code>shadow-lg</code></li>
+            </ul>
+        </section>
+        <!-- Layouts -->
+        <section class="note-card">
+            <h2 class="text-2xl font-semibold section-title">Layouts</h2>
+            <p class="text-xl font-bold mb-2">Width and Height:</p>
+            <ul class="list-disc ml-6 mb-4">
+                <li><code>w-1/2</code>, <code>w-full</code>, <code>h-32</code>, <code>h-screen</code></li>
+            </ul>
+            <p class="text-xl font-bold mb-2">Padding and Margin:</p>
+            <ul class="list-disc ml-6 mb-4">
+                <li>Padding: <code>p-4</code>, <code>py-2</code>, <code>px-2</code></li>
+                <li>Margin: <code>mx-auto</code>, <code>mt-4</code>, <code>mb-2</code></li>
+            </ul>
+            <p class="text-xl font-bold mb-2">Display and Position:</p>
+            <ul class="list-disc ml-6 mb-4">
+                <li>Display: <code>block</code>, <code>inline-block</code>, <code>inline</code>, <code>table</code></li>
+                <li>Position: <code>relative</code>, <code>absolute</code>, <code>fixed</code>, <code>sticky</code></li>
+            </ul>
+        </section>
+        <section class="note-card">
+          <h2 class="text-2xl font-semibold section-title">Flexbox</h2>
+          <!-- Flex Containers -->
+          <p class="text-xl font-bold mb-2">Flex Containers:</p>
+          <ul class="list-disc ml-6 mb-4">
+              <li><code>flex</code>: Defines a flex container. Enables flex context for its children.</li>
+              <li><code>flex-row</code>: Places children in a horizontal row.</li>
+              <li><code>flex-col</code>: Places children in a vertical column.</li>
+          </ul>
+        </section>
+        <!-- Tables -->
+        <section class="note-card">
+          <h2 class="text-2xl font-semibold section-title">Tables</h2>
+          <p class="text-base font-sans text-gray-800 mb-2">
+              Tailwind CSS provides utility classes to style tables easily and effectively. Here's an overview of the key classes and their usage:
+          </p>
+          <p class="text-xl font-bold mb-2">Table Layout:</p>
+          <ul class="list-disc ml-6 mb-4">
+              <li><code>table</code>
+              <li><code>table-auto</code>: Automatically determines the column widths.</li>
+              <li><code>table-fixed</code>: Fixes the table layout, useful for fixed-width columns.</li>
+          </ul>
+          <p class="text-xl font-bold mb-2">Table Borders:</p>
+          <ul class="list-disc ml-6 mb-4">
+              <li><code>border</code>: Adds a border to the entire table.</li>
+              <li><code>border-collapse</code>: Collapses the table borders into a single border.</li>
+              <li><code>border-separate</code>: Separates the table borders.</li>
+          </ul>
+          <p class="text-xl font-bold mb-2">Table Rows and Cells:</p>
+          <ul class="list-disc ml-6 mb-4">
+              <li><code>table-row</code>
+              <li><code>table-cell</code>
+              <li><code>table-header-group</code>: Defines a group of header rows.</li>
+              <li><code>table-footer-group</code>: Defines a group of footer rows.</li>
+              <li><code>table-row-group</code>: Defines a group of body rows.</li>
+          </ul>
+          <p class="text-xl font-bold mb-2">Table Styling:</p>
+          <ul class="list-disc ml-6 mb-4">
+              <li><code>text-left</code>, <code>text-center</code>, <code>text-right</code>: Aligns text within cells.</li>
+          </ul>
+      </section>
+      <footer class="bg-gray-800 text-white py-4 mt-auto">
+        <div class="container mx-auto flex justify-end">
+            <div class="text-right">
+                <p class="mb-2">Website by <a href="https://www.linkedin.com/in/dwijapanchal/" class="text-blue-400 hover:underline">Dwija Panchal</a></p>
+                <p>&copy; 2024 Dwija Panchal</p>
+            </div>
+        </div>
+      </footer>
+    </div>
+</body>
+</html>
