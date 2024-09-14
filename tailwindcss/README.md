@@ -113,3 +113,7 @@ To set borders between elements:
 ## Flexbox
 - **Flex Directions**: `flex-row`, `flex-col`, `flex-row-reverse`, `flex-col-reverse`.
 - **Flex Growth**: `flex-1`, `flex-auto`, `flex-initial`, `flex-none`.
+
+---
+
+#### Tailwind CSS Cheatsheet [Link](https://nerdcave.com/tailwind-cheat-sheet)
